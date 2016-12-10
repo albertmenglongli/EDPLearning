@@ -164,7 +164,7 @@ class BrHandler(BaseHandler):
 
 if __name__ == "__main__":
     content = '''Object Recursion
-    This is a concept came up in 1998'''
+This is a concept came up in 1998'''
 
     letter = Letter(content)
     handler = UpperHandler(successor=BrHandler(successor=HtmlTagHandler(Tag.html, successor=HtmlTagHandler(Tag.body))))
